@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    background: #021e1e;
+}
+
+.container{
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black;
+    backdrop-filter: blur(8px);
+    text-align: center;
+    padding: 25px 30px;
+
+}
+.container h1{
+    font-size: 30px;
+     text-decoration: underline;
+     color: #202124;
+     margin-bottom: 40px;
+}
+.container .input{
+    border: 2px solid #bbbbbd;
+    border-radius: 4px;
+    margin-block: 20px;
+
+}
+.container .input:focus-within{
+    border-color: #0056b3 ;
+
+}
+.container .input input,
+.container .input select{
+    width: 150px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    padding: 8px;
+    overflow: hidden;
+}
+.container .arrow{
+    transform:rotate(90deg);
+    font-size: 45px;
+}
+
+.container .result{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+/* responsiveness */
+
+@media screen and (max-width:500px) {
+    .container{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .container h1{
+        font-size: 20px; 
+    }
+    .container .input{
+        border: none;
+    }
+    .container .input input,
+    .container .input select{
+        border: 1px solid #ccc;
+        margin-block: 4px;
+        width: 100%;
+    }
+    
+}
